@@ -21,25 +21,25 @@
         <div class="input-box-one">
 
           <div class="input-name">
-            <label for="">Nome</label>
-            <input type="text" name="" id="" >
+            <label for="input-name">Nome</label>
+            <input type="text" name="name" id="input-name" >
           </div>
 
           <div class="input-surname">
-            <label for="">Sobrenome</label>
-            <input type="text" name="" id="">
+            <label for="input-surname">Sobrenome</label>
+            <input type="text" name="name" id="input-surname">
           </div>
            
         </div>
 
          <div class="input-email">
-            <label for="">Email <span>(digite um email válido)</span></label>
-            <input type="text" name="" id="">
+            <label for="input-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" name="email" id="input-email">
           </div>
 
           <div class="input-password">
-            <label for="">Senha<span>(mínimo de 6 caracteres)</span></label>
-            <input type="text" name="" id="">
+            <label for="input-password">Senha<span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" name="password" id="input-password">
           </div>
       </fieldset>
       <fieldset>
@@ -47,11 +47,37 @@
         <div class="input-box-one">
 
           <div class="input-name">
-            <label for="">Nome do seu Mentor <span>(só o primeiro nome)</span></label>
-            <input type="text" name="" id="" >
+            <label for="input-name">Nome do seu Mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" name="name" id="input-name" >
           </div>
 
           </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Seus horários disponíveis</legend>
+        <h2 class="sub-legend">Primeira mentoria</h2>
+        <label for="">Data<span>(DD/MM/AAAA)</span></label>
+
+          <div class="input-date-time">
+
+            <input type="date" name="date" class="date">
+            <input type="time" class="time">
+            <input type="time" class="time">
+
+          </div>
+
+          <h2 class="sub-legend">Segunda mentoria</h2>
+          <label for="">Data<span>(DD/MM/AAAA)</span></label>
+  
+            <div class="input-date-time">
+  
+              <input type="date" name="date" class="date" >
+              <input type="time" class="time">
+              <input type="time" class="time">
+  
+            </div>
+
       </fieldset>
     </form>
   </div>
