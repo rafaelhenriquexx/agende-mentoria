@@ -15,7 +15,7 @@
       <h1>Mentoria</h1>
       <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
     </header>
-    <form class="form" action="">
+    <form class="form" action="" id="my-form">
       <fieldset>
         <legend>Informações pessoais</legend>
         <div class="input-box-one">
@@ -33,22 +33,22 @@
         </div>
 
          <div class="input-email">
-            <label for="input-email">Email <span>(digite um email válido)</span></label>
-            <input type="email" name="email" id="input-email">
+            <label for="input-email">Email<span>(digite um email válido)</span></label>
+            <input type="email" name="email" id="input-email" required>
           </div>
 
           <div class="input-password">
             <label for="input-password">Senha<span>(mínimo de 6 caracteres)</span></label>
-            <input type="password" name="password" id="input-password">
+            <input type="password" name="password" id="input-password" required maxlength="6">
           </div>
       </fieldset>
       <fieldset>
         <legend>Informações do mentor</legend>
-        <div class="input-box-one">
+        <div class="input-box">
 
           <div class="input-name">
-            <label for="input-name">Nome do seu Mentor <span>(só o primeiro nome)</span></label>
-            <input type="text" name="name" id="input-name" >
+            <label for="input-name">Nome do seu Mentor<span>(só o primeiro nome)</span></label>
+            <input type="text" name="name" id="input-name" required>
           </div>
 
           </div>
@@ -62,17 +62,17 @@
 
             <div class="date">
                <label for="">Data<span>(DD/MM/AAAA)</span></label>
-               <input type="date" name="date" class="date">
+               <input type="date" name="date" class="date" required>
             </div>
             
             <div>
               <label for="">Das</label>
-              <input type="time"  class="time">
+              <input type="time"  class="time" required>
             </div>
             
             <div>
               <label for="">Até</label>
-              <input type="time" class="time">
+              <input type="time" class="time" required>
             </div>
           </div>
 
@@ -82,26 +82,26 @@
 
             <div class="date">
                <label for="">Data<span>(DD/MM/AAAA)</span></label>
-               <input type="date" name="date" class="date">
+               <input type="date" name="date" class="date" required>
             </div>
             
             <div>
               <label for="">Das</label>
-              <input type="time"  class="time">
+              <input type="time"  class="time" required>
             </div>
             
             <div>
               <label for="">Até</label>
-              <input type="time" class="time">
+              <input type="time" class="time" required>
             </div>
           </div>
 
       </fieldset>
-      <div class="button">
-         <button type="submit">Salvar</button>
-      </div>
       
     </form>
+    <footer class="footer">
+      <button type="submit" form="my-form">Salvar</button>
+    </footer>
   </div>
   
 </body>

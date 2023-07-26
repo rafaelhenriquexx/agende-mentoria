@@ -39,8 +39,8 @@ span {
   line-height: 20px;
   margin-left: 9px;
 }
-span:hover{
-  color: #4E4958;
+span:hover {
+  color: #4e4958;
 }
 fieldset {
   border: none;
@@ -58,7 +58,7 @@ input {
   padding: 0px 10px;
   height: 56px;
   font-size: 14px;
-  line-height: 24px; 
+  line-height: 24px;
   font-family: Poppins;
   color: #4e4958;
   background: #fafafc;
@@ -102,35 +102,91 @@ input {
   background: #fff;
   border-radius: 20px 20px 0px 0px;
 }
-.input-box-one,
+.input-box,
 .input-date-time {
   display: flex;
   gap: 22px;
 }
 .input-name,
-.input-surname, .date {
+.input-surname,
+.date {
   flex: 1;
 }
 .time {
   width: 8.75rem;
 }
+.footer {
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 20px 20px;
+  padding: 52.5px 71px;
+  background: #535971;
+}
+.footer button {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  width: 608px;
+  height: 55.652px;
+  padding: 15px 40px;
+  text-align: center;
+  color: #fff;
+  font-family: Staatliches;
+  font-size: 20px;
+  line-height: 26px;
+  background: #ff5374;
+  border: none;
+  cursor: pointer;
+}
 
 @media (max-width: 560px) {
+  .form{
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+  }
   .time {
     width: 100px;
   }
-  .input-date-time {
-    gap: 10px;
+  .header h1 {
+    font-size: 40px;
+  }
+  .header p {
+    font-size: 16px;
+    padding: 20px 0px 30px 0px;
+  }
+  .footer {
+    padding: 40px 20px;
+    border-radius: 0px;
+  }
+  .footer button{
+    align-items: center;
+    width: 300px;
+    height: 45px;
+  }
+  input{
+    height: 40px;
   }
 }
 @media (max-width: 450px) {
   .date {
-    width: 100px;
+    width: 150px;
   }
   .time {
     width: 80px;
   }
-  .input-date-time {
-    gap: 10px;
+  span {
+    font-size: 12px;
+    margin-left: 5px;
   }
+  label{
+    font-size: 12px;
+  }
+  .input-box,
+.input-date-time {
+  gap: 15px;
+}
+
 }
