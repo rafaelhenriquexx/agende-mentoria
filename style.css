@@ -138,6 +138,9 @@ input {
   border: none;
   cursor: pointer;
 }
+footer button:hover{
+  background: #ff6989;
+}
 
 @media (max-width: 560px) {
   .form{
